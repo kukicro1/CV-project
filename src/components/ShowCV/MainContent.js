@@ -5,18 +5,19 @@ import ShowGeneralInfo from './ShowGeneralInfo'
 
 class MainContent extends Component {
   render() {
+    const { generalInfo } = this.props
     return (
       <div className='mainContent'>
         <section className='mainContentDescriptionContainer'>
-          <ShowGeneralInfo></ShowGeneralInfo>
+          <ShowGeneralInfo generalInfo={generalInfo} />
         </section>
 
         <section className='mainContentEducationContainer'>
-          <ShowEducation></ShowEducation>
+          <ShowEducation generalInfo={generalInfo} />
         </section>
 
         <section className='mainContentExperienceContainer'>
-          <ShowExperience></ShowExperience>
+          <ShowExperience generalInfo={generalInfo} />
         </section>
       </div>
     )

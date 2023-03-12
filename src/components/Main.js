@@ -11,7 +11,19 @@ class Main extends Component {
         lastName: '',
         email: '',
         phoneNumber: '',
-        description: '',
+        personalInfo: '',
+      },
+      education: {
+        university: '',
+        degree: '',
+        generation: '',
+        subject: '',
+      },
+      experience: {
+        company: '',
+        position: '',
+        from: '',
+        to: '',
       },
     }
   }
@@ -22,7 +34,15 @@ class Main extends Component {
 
     this.setState({
       generalInfo: {
+        ...this.state.generalInfo,
         [name]: target.value,
+      },
+      education: {
+        ...this.state.education,
+        [name]: target.value,
+      },
+      experience: {
+        ...this.state.education,
         [name]: target.value,
       },
     })

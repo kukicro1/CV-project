@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 class PersonalDetails extends Component {
   render() {
+    const { generalInfo } = this.props
     return (
       <div className='personalDetailsContainer'>
         <img
@@ -11,19 +12,14 @@ class PersonalDetails extends Component {
         <section className='personalDetailsSection'>
           <h2>Personal Details</h2>
           <div>
-            <section className='personalDetails address'>
-              <h3>Address</h3>
-              <p>Vedra nebesa</p>
-            </section>
-
             <section className='personalDetails phoneNumber'>
               <h3>Phone number</h3>
-              <p>099999999999</p>
+              <p>{generalInfo.phoneNumber}</p>
             </section>
 
             <section className='personalDetails email'>
               <h3>Email</h3>
-              <p>kruno@gmail.com</p>
+              <p>{generalInfo.email}</p>
             </section>
           </div>
         </section>

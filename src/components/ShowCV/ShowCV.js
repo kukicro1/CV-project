@@ -5,12 +5,13 @@ import PersonalDetails from './PersonalDetails'
 
 class ShowCV extends Component {
   render() {
+    const { generalInfo } = this.props
     return (
       <div className='showCV'>
-        <Header generalInfo={this.props.generalInfo} />
+        <Header generalInfo={generalInfo} />
         <div className='CVContainer'>
-          <MainContent />
-          <PersonalDetails />
+          <MainContent generalInfo={generalInfo} />
+          <PersonalDetails generalInfo={generalInfo} />
         </div>
       </div>
     )

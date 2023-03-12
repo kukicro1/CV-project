@@ -19,9 +19,23 @@ class GeneralInfo extends Component {
             name='lastName'
             onChange={handleInput}
           />
-          <input type='email' placeholder='Email' />
-          <input type='number' placeholder='Phone Number' />
-          <textarea placeholder='Write more about yourself.'></textarea>
+          <input
+            type='email'
+            placeholder='Email'
+            name='email'
+            onChange={handleInput}
+          />
+          <input
+            type='number'
+            placeholder='Phone Number'
+            name='phoneNumber'
+            onChange={handleInput}
+          />
+          <textarea
+            placeholder='Write more about yourself.'
+            name='personalInfo'
+            onChange={handleInput}
+          ></textarea>
         </form>
       </div>
     )
