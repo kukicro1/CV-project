@@ -133,6 +133,7 @@ form > button {
 
 form > button:hover {
   cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 textarea {
@@ -145,7 +146,7 @@ textarea {
   resize: none;
 }
 
-.commandButtons{
+.commandButtons {
   display: grid;
   grid-template-rows: 40px 40px;
   gap: 10px;
@@ -163,7 +164,7 @@ textarea {
   border: none;
 }
 
-.commandButtons > button:hover{
+.commandButtons > button:hover {
   cursor: pointer;
   border: 1px solid rgb(0, 0, 0);
 }
@@ -177,3 +178,102 @@ textarea {
   color: white;
 }
 
+.showCV {
+  display: grid;
+  grid-template-rows: 130px 1fr;
+  padding: 0px;
+}
+
+.header {
+  background-color: rgb(13, 13, 122);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 90px;
+  padding: 20px;
+}
+
+.header > h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.header > p {
+  font-size: 1em;
+  padding: 10px;
+}
+
+.CVContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.personalDetailsContainer {
+  background-color: rgb(196, 196, 196);
+  display: grid;
+  grid-template-rows: 250px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+img {
+  margin-top: 20px;
+  width: 160px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.personalDetailsSection {
+  align-self: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.personalDetailsSection > h2 {
+  font-size: 1.4em;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+}
+
+.personalDetails > h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+.personalDetails > p {
+  font-size: 0.9em;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+}
+
+.mainContentDescriptionContainer,
+.mainContentEducationContainer,
+.mainContentExperienceContainer {
+  height: 200px;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.descriptionContainerDiv > h1 {
+  border-bottom: 1px solid grey;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.educationContainerDiv > h1 {
+  border-bottom: 1px solid grey;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.experienceContainerDiv > h1 {
+  border-bottom: 1px solid grey;
+  font-size: 1.4em;
+  font-weight: bold;
+}

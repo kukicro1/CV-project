@@ -7,9 +7,9 @@ class CVForm extends Component {
   render() {
     return (
       <div className='CVform'>
-        <GeneralInfo></GeneralInfo>
-        <Education></Education>
-        <Experience></Experience>
+        <GeneralInfo handleInput={this.props.handleInput} />
+        <Education />
+        <Experience />
         <div className='commandButtons'>
           <button>Load Example</button>
           <button>Reset</button>
