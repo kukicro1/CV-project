@@ -5,12 +5,15 @@ import PersonalDetails from './PersonalDetails'
 
 class ShowCV extends Component {
   render() {
-    const { generalInfo } = this.props
+    const { generalInfo, componentCount } = this.props
     return (
       <div className='showCV'>
         <Header generalInfo={generalInfo} />
         <div className='CVContainer'>
-          <MainContent generalInfo={generalInfo} />
+          <MainContent
+            generalInfo={generalInfo}
+            componentCount={componentCount}
+          />
           <PersonalDetails generalInfo={generalInfo} />
         </div>
       </div>

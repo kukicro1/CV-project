@@ -5,15 +5,28 @@ import GeneralInfo from './GeneralInfo'
 
 class CVForm extends Component {
   render() {
-    const { handleInput } = this.props
+    const {
+      handleInput,
+      addExperienceHandler,
+      addEducationHandler,
+      handleLoad,
+      handleReset,
+      componentCount,
+    } = this.props
     return (
       <div className='CVform'>
         <GeneralInfo handleInput={handleInput} />
-        <Education handleInput={handleInput} />
-        <Experience handleInput={handleInput} />
+        <Education
+          addEducationHandler={addEducationHandler}
+          componentCount={componentCount}
+        />
+        <Experience
+          componentCount={componentCount}
+          addExperienceHandler={addExperienceHandler}
+        />
         <div className='commandButtons'>
-          <button>Load Example</button>
-          <button>Reset</button>
+          <button onClick={handleLoad}>Load Example</button>
+          <button onClick={handleReset}>Reset</button>
         </div>
       </div>
     )

@@ -5,7 +5,7 @@ import ShowGeneralInfo from './ShowGeneralInfo'
 
 class MainContent extends Component {
   render() {
-    const { generalInfo } = this.props
+    const { generalInfo, componentCount } = this.props
     return (
       <div className='mainContent'>
         <section className='mainContentDescriptionContainer'>
@@ -13,11 +13,11 @@ class MainContent extends Component {
         </section>
 
         <section className='mainContentEducationContainer'>
-          <ShowEducation generalInfo={generalInfo} />
+          <ShowEducation componentCount={componentCount} />
         </section>
 
         <section className='mainContentExperienceContainer'>
-          <ShowExperience generalInfo={generalInfo} />
+          <ShowExperience componentCount={componentCount} />
         </section>
       </div>
     )

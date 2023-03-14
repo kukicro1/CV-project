@@ -8,7 +8,6 @@ class Header extends Component {
         <h1>
           {generalInfo.firstName} {generalInfo.lastName}
         </h1>
-        <p>okokokok</p>
       </div>
     )
   }

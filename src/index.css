@@ -55,7 +55,7 @@
 /* Change grid template row to auto for adding more form */
 .CVform {
   display: grid;
-  grid-template-rows: 360px 400px 400px;
+  grid-template-rows: 360px auto auto ;
   gap: 20px;
 }
 
@@ -115,7 +115,7 @@ form > input {
   font-size: 1em;
 }
 
-form > button {
+button {
   align-self: center;
   justify-self: center;
   width: 750px;
@@ -131,7 +131,7 @@ form > button {
   border-radius: 5px;
 }
 
-form > button:hover {
+button:hover {
   cursor: pointer;
   border: 1px solid rgb(0, 0, 0);
 }
@@ -180,7 +180,7 @@ textarea {
 
 .showCV {
   display: grid;
-  grid-template-rows: 130px 1fr;
+  grid-template-rows: 110px 1fr;
   padding: 0px;
 }
 
@@ -190,7 +190,7 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  height: 90px;
+  height: 70px;
   padding: 20px;
 }
 
