@@ -1,15 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class ShowEducation extends Component {
-  render() {
-    const { componentCount } = this.props
-    return (
-      <div className='educationContainerDiv'>
-        <h1>Education</h1>
-        {componentCount.showEducationComponents}
-      </div>
-    )
-  }
+const ShowEducation = ({ componentCount }) => {
+  return (
+    <div className='educationContainerDiv'>
+      <h1>Education</h1>
+      {componentCount.showEducationComponents}
+    </div>
+  )
 }
+
+// class ShowEducation extends Component {
+//   render() {
+//     const { componentCount } = this.props
+//     return (
+//       <div className='educationContainerDiv'>
+//         <h1>Education</h1>
+//         {componentCount.showEducationComponents}
+//       </div>
+//     )
+//   }
+// }
 
 export default ShowEducation

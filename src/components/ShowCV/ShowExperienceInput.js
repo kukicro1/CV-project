@@ -1,17 +1,28 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class ShowExperienceInput extends Component {
-  render() {
-    const { experience } = this.props
-    return (
-      <div>
-        <p>{experience.company}</p>
-        <p>{experience.position}</p>
-        <p>{experience.from}</p>
-        <p>{experience.to}</p>
-      </div>
-    )
-  }
+const ShowExperienceInput = ({ experience }) => {
+  return (
+    <div>
+      <p>{experience.company}</p>
+      <p>{experience.position}</p>
+      <p>{experience.from}</p>
+      <p>{experience.to}</p>
+    </div>
+  )
 }
+
+// class ShowExperienceInput extends Component {
+//   render() {
+//     const { experience } = this.props
+//     return (
+//       <div>
+//         <p>{experience.company}</p>
+//         <p>{experience.position}</p>
+//         <p>{experience.from}</p>
+//         <p>{experience.to}</p>
+//       </div>
+//     )
+//   }
+// }
 
 export default ShowExperienceInput
